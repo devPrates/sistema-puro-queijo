@@ -40,6 +40,7 @@ model Produto {
   id               Int              @id @default(autoincrement())
   nome             String
   slug             String           @unique
+  imageURL         String
   sabor            String
   descricao        String?
   tamanhoEmbalagem TamanhoEmbalagem
