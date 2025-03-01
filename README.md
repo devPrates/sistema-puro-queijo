@@ -1,4 +1,4 @@
-# Sistema de Gestão Puro Queijo
+# Sistema de Gestão para Empresa Puro Queijo
 
 ## Introdução
 
@@ -63,5 +63,5 @@ O sistema pode ser acessado no seguinte link:
 
 ---
 
-**Desenvolvedor**: Nome do desenvolvedor  
+**Desenvolvedor**: Gabriel Prates 
 **Data**: Mês/ano
