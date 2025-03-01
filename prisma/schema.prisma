@@ -9,3 +9,50 @@ datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
 }
+
+enum Role {
+  ADMIN
+  USER
+}
+
+model Usuario {
+  id    Int    @id @default(autoincrement())
+  nome  String
+  email String @unique
+  senha String
+  role  Role
+
+  produtos   Produto[]
+  categorias Categoria[]
+}
+
+model Categoria {
+  id        Int     @id @default(autoincrement())
+  nome      String
+  descricao String?
+
+  produtos  Produto[]
+  usuarioId Int
+  usuario   Usuario   @relation(fields: [usuarioId], references: [id])
+}
+
+model Produto {
+  id               Int              @id @default(autoincrement())
+  nome             String
+  slug             String           @unique
+  sabor            String
+  descricao        String?
+  tamanhoEmbalagem TamanhoEmbalagem
+
+  categoriaId Int
+  categoria   Categoria @relation(fields: [categoriaId], references: [id])
+
+  usuarioId Int
+  usuario   Usuario @relation(fields: [usuarioId], references: [id])
+}
+
+enum TamanhoEmbalagem {
+  UM_KG
+  QUINHENTOS_G
+  DUZENTOS_CINQUENTA_G
+}
