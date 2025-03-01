@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sistema de Gestão Puro Queijo
 
-## Getting Started
+## Introdução
 
-First, run the development server:
+Este sistema foi desenvolvido para a empresa **Puro Queijo de Naviraí**, com o objetivo de facilitar a gestão de categorias e produtos, incluindo a criação, edição e visualização de informações sobre os produtos. O sistema foi projetado para ser intuitivo e eficiente, permitindo que os usuários gerenciem rapidamente seu catálogo.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Descrição do Problema
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A Puro Queijo de Naviraí enfrentava dificuldades na gestão de seu estoque e na organização das informações sobre os produtos e categorias. A empresa necessitava de um sistema que permitisse:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Organizar produtos em categorias.
+- Manter registros detalhados dos produtos, incluindo nome, sabor, descrição e tamanho da embalagem.
+- Garantir o controle de usuários, permitindo diferentes níveis de acesso conforme o papel de cada um (usuário comum ou administrador).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Elicitação de Requisitos
 
-## Learn More
+Para desenvolver o sistema, os seguintes requisitos foram levantados:
 
-To learn more about Next.js, take a look at the following resources:
+### Funcionais:
+- O sistema deve permitir a criação, edição e exclusão de produtos.
+- O sistema deve permitir a criação, edição e exclusão de categorias de produtos.
+- O sistema deve permitir a associação de produtos a categorias.
+- O sistema deve controlar usuários com diferentes permissões (admin e usuário).
+- O sistema deve gerar relatórios sobre produtos e categorias.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Não Funcionais:
+- A interface deve ser intuitiva e responsiva.
+- O sistema deve ser acessível via web.
+- O sistema deve ter alta disponibilidade e ser fácil de usar.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Diagrama de Classes
 
-## Deploy on Vercel
+Aqui está o diagrama de classes do sistema:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Diagrama de Classes](./docs/diagrama-classes.svg)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Tecnologias Utilizadas
+
+- **Next.js**: Framework React para construção da interface.
+- **ShadCN UI**: Biblioteca de componentes UI para uma interface moderna e responsiva.
+- **Prisma**: ORM para gerenciar a conexão e manipulação do banco de dados.
+- **SQLite**: Banco de dados utilizado para persistência dos dados.
+- **Zod**: Biblioteca para validação de dados de entrada, garantindo maior segurança e integridade.
+- **React Hook Form**: Biblioteca para gerenciar formulários e validações de forma eficiente.
+
+## Imagens das Telas
+
+A seguir, algumas imagens das telas do sistema:
+
+### Tela de Login
+![Tela de Login](./docs/placeholder.svg)
+
+### Tela de Cadastro de Produto
+![Tela de Cadastro de Produto](./docs/placeholder.svg)
+
+### Tela de Lista de Produtos
+![Tela de Lista de Produtos](./docs/placeholder.svg)
+
+## Link do Deploy
+
+O sistema pode ser acessado no seguinte link:  
+[Deploy do Sistema](https://seu-deploy-link.com)
+
+---
+
+**Desenvolvedor**: Nome do desenvolvedor  
+**Data**: Mês/ano
