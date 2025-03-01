@@ -1,4 +1,4 @@
-import type { Categoria } from "@prisma/client"
+import type { Categoria, Produto } from "@prisma/client"
 
 export type CategoriaWithUsuario = Categoria & {
   usuario: {
@@ -6,4 +6,19 @@ export type CategoriaWithUsuario = Categoria & {
     nome: string
   }
 }
+
+export type ProdutoWithRelations = Produto & {
+  categoria: {
+    id: number
+    nome: string
+  }
+  usuario: {
+    id: number
+    nome: string
+  }
+}
+
+
+
+
 
