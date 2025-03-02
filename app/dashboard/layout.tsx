@@ -1,6 +1,9 @@
 import { Metadata } from "next";
 import { getSession } from "../login/actions/auth";
 import { redirect } from "next/navigation";
+import { DashboardSidebar } from "@/components/sidebar"
+import { DashboardNavbar } from "@/components/navbar"
+import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar"
 
 export const metadata: Metadata = {
     title: "ADMIN - Puro Queijo",
@@ -19,10 +22,12 @@ export default async function DashboardLayout({
     }
 
     return (
-        <>
-            <main>
-                {children}
-            </main>
-        </>
+        <SidebarProvider>
+            <DashboardSidebar />
+            <SidebarInset>
+                <DashboardNavbar />
+                <main className="flex-1 px-10">{children}</main>
+            </SidebarInset>
+        </SidebarProvider>
     );
 }

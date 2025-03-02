@@ -18,12 +18,28 @@ export default function DashboardPage() {
   }
 
   return (
-    <div className="container py-10">
-      <div className="flex justify-between items-center">
+    <div className="container py-6">
+      <p className="my-2 text-muted-foreground">Bem-vindo, {email}!</p>
+      <div className="flex justify-between items-center mb-2">
         <h1 className="text-3xl font-bold">Dashboard</h1>
-        <LogoutButton />
       </div>
-      <p className="mt-4 text-muted-foreground">Bem-vindo, {email}!</p>
+
+      <div className="grid gap-4">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="rounded-lg border bg-card p-6">
+          <div className="text-sm font-medium text-muted-foreground">Total de Usuários</div>
+          <div className="text-2xl font-bold">1,234</div>
+        </div>
+        <div className="rounded-lg border bg-card p-6">
+          <div className="text-sm font-medium text-muted-foreground">Receita Mensal</div>
+          <div className="text-2xl font-bold">R$ 12,345</div>
+        </div>
+        <div className="rounded-lg border bg-card p-6">
+          <div className="text-sm font-medium text-muted-foreground">Novos Clientes</div>
+          <div className="text-2xl font-bold">321</div>
+        </div>
+      </div>
+    </div>
     </div>
   )
 }
