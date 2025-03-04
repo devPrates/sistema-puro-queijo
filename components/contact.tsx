@@ -18,7 +18,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="text-gray-600 body-font relative">
+    <section className="text-gray-600 body-font relative px-6 sm:px-0">
       <div className="flex flex-col text-center w-full mb-20">
         <h2 className="text-xs text-[#732c02] tracking-widest font-medium title-font mb-1 uppercase">Ficou interessado em nossos produtos?</h2>
         <h1 className="sm:text-4xl text-2xl font-bold title-font text-gray-900">Entre em Contato com Nossa Equipe</h1>

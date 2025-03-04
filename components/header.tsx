@@ -3,8 +3,8 @@ import { Button } from "./ui/button";
 
 export default function Header() {
     return (
-        <section className="container mx-auto pt-20 sm:pt-12 px-5 sm:px-0 bg-[#e5ac62]" id="home">
-            <div className=" flex flex-col items-center text-center">
+        <section className="pt-20 sm:pt-12 px-5 sm:px-0 bg-[#e5ac62]" id="home">
+            <div className="container mx-auto flex flex-col items-center text-center">
                 <h1 className="my-6 text-4xl lg:text-6xl font-bold leading-none tracking-tighter text-[#732c02]">A Hora Mais Saborosa do Dia</h1>
                 <p className="mb-8 max-w-3xl text-white lg:text-xl">
                     Descubra as possibilidades infinitas da nossa plataforma inovadora.
