@@ -3,16 +3,15 @@ import { Button } from "./ui/button";
 
 export default function Header() {
     return (
-        <section className="container mx-auto pt-20 sm:pt-12 px-5 sm:px-0" id="home">
+        <section className="container mx-auto pt-20 sm:pt-12 px-5 sm:px-0 bg-[#e5ac62]" id="home">
             <div className=" flex flex-col items-center text-center">
-                <h1 className="my-6 text-pretty text-4xl font-bold lg:text-6xl">A Hora Mais Saborosa do Dia</h1>
-                <p className="mb-8 max-w-3xl text-zinc-600 lg:text-xl">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat
-                    omnis! Porro facilis quo animi consequatur. Explicabo.
+                <h1 className="my-6 text-4xl lg:text-6xl font-bold leading-none tracking-tighter text-[#732c02]">A Hora Mais Saborosa do Dia</h1>
+                <p className="mb-8 max-w-3xl text-white lg:text-xl">
+                    Descubra as possibilidades infinitas da nossa plataforma inovadora.
                 </p>
                 <div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
-                    <Button>Ver Produtos</Button>
-                    <Button variant={'outline'}>Sobre Nós</Button>
+                    <Button size={'lg'}>Ver Produtos</Button>
+                    <Button variant={'outline'} size={'lg'}>Sobre Nós</Button>
                 </div>
             </div>
             <div className="mt-12 aspect-video overflow-clip md:aspect-auto md:h-[420px]">
