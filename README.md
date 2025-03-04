@@ -6,10 +6,11 @@ Este sistema foi desenvolvido para a empresa **Puro Queijo de Naviraí**, com o 
 
 ## Descrição do Problema
 
-A Puro Queijo de Naviraí enfrentava dificuldades na gestão de seu estoque e na organização das informações sobre os produtos e categorias. A empresa necessitava de um sistema que permitisse:
+A Puro Queijo de Naviraí enfrentava dificuldades na divulgação dos seus produtos e na organização das informações sobre os produtos e categorias. A empresa necessitava de um sistema que permitisse:
 
-- Organizar produtos em categorias.
-- Manter registros detalhados dos produtos, incluindo nome, sabor, descrição e tamanho da embalagem.
+- Landing page para divulgação;
+- Organizar produtos em categorias;
+- Manter registros detalhados dos produtos, incluindo nome, sabor, descrição e tamanho da embalagem;
 - Garantir o controle de usuários, permitindo diferentes níveis de acesso conforme o papel de cada um (usuário comum ou administrador).
 
 ## Elicitação de Requisitos
@@ -25,7 +26,7 @@ Para desenvolver o sistema, os seguintes requisitos foram levantados:
 
 ### Não Funcionais:
 - A interface deve ser intuitiva e responsiva.
-- O sistema deve ser acessível via web.
+- O sistema deve ser acessível via web (desktop e mobile).
 - O sistema deve ter alta disponibilidade e ser fácil de usar.
 
 ## Diagrama de Classes
@@ -58,10 +59,8 @@ A seguir, algumas imagens das telas do sistema:
 
 ## Link do Deploy
 
-O sistema pode ser acessado no seguinte link:  
-[Deploy do Sistema](https://seu-deploy-link.com)
+O sistema pode ser acessado no seguinte link:  [Deploy do Sistema](https://sistema-puro-queijo.vercel.app/)
 
 ---
 
-**Desenvolvedor**: Gabriel Prates 
-**Data**: Mês/ano
+**Desenvolvedor**: Gabriel Prates
