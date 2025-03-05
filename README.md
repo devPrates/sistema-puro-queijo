@@ -46,21 +46,21 @@ Aqui está o diagrama de classes do sistema:
 
 ## Imagens das Telas
 
-A seguir, algumas imagens das telas do sistema:
+### Tela de Dashboard
+![Tela de Dashboard](./docs/dashboard.png)
 
-### Tela de Login
-![Tela de Login](./docs/placeholder.svg)
+### Tela de Cadastro de Usuários
+![Tela de Cadastro de Usuários](./docs/users.png)
 
-### Tela de Cadastro de Produto
-![Tela de Cadastro de Produto](./docs/placeholder.svg)
+### Tela de Lista de Categorias
+![Tela de Lista de Categoria](./docs/categorias.png)
 
 ### Tela de Lista de Produtos
-![Tela de Lista de Produtos](./docs/placeholder.svg)
+![Tela de Lista de Produtos](./docs/produtos.png)
 
-## Link do Deploy
-
-O sistema pode ser acessado no seguinte link:  [Deploy do Sistema](https://sistema-puro-queijo.vercel.app/)
 
 ---
 
-**Desenvolvedor**: Gabriel Prates
+### Link do Deploy
+
+O sistema pode ser acessado no seguinte link:  [Deploy do Sistema](https://sistema-puro-queijo.vercel.app/)

@@ -3,7 +3,7 @@ import { TamanhoEmbalagem } from "@prisma/client"
 
 export const ProdutoSchema = z.object({
   nome: z.string().min(2, "O nome deve ter pelo menos 2 caracteres"),
-  imageURL: z.string().url("URL inválida"),
+  imageURL: z.string(),
   sabor: z.string().min(2, "O sabor deve ter pelo menos 2 caracteres"),
   descricao: z.string().optional(),
   tamanhoEmbalagem: z.enum(

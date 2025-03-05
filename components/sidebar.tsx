@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useSelectedLayoutSegment } from "next/navigation"
-import { BarChart3, Home, Settings, Users } from "lucide-react"
+import { BarChart3, ChartColumnStacked, Home, Settings, ShoppingBag, Users } from "lucide-react"
 
 import {
   Sidebar,
@@ -34,13 +34,13 @@ const menuItems = [
   },
   {
     title: "Categorias",
-    icon: BarChart3,
+    icon: ChartColumnStacked,
     href: "/dashboard/categories",
     segment: "categories",
   },
   {
     title: "Produtos",
-    icon: BarChart3,
+    icon: ShoppingBag,
     href: "/dashboard/products",
     segment: "products",
   },
@@ -64,7 +64,7 @@ export function DashboardSidebar() {
             <SidebarMenuButton size="lg" asChild>
               <Link href="/dashboard">
                 <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                  <span className="font-bold">DB</span>
+                  <span className="font-bold">PQ</span>
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none">
                   <span className="font-semibold">Dashboard</span>
@@ -84,8 +84,8 @@ export function DashboardSidebar() {
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton
                     asChild
-                    // Verifica se o item está ativo comparando com o segmento atual
-                    isActive={segment === item.segment}
+                    // Adiciona a classe de cor de fundo quando o item está ativo
+                    className={segment === item.segment ? "bg-[#e5ac62]" : ""}
                   >
                     <Link href={item.href}>
                       <item.icon className="h-4 w-4" />
@@ -115,4 +115,3 @@ export function DashboardSidebar() {
     </Sidebar>
   )
 }
-
