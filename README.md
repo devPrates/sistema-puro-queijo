@@ -49,14 +49,14 @@ Aqui está o diagrama de classes do sistema:
 ### Tela de Dashboard
 ![Tela de Dashboard](./docs/dashboard.png)
 
-### Tela de Cadastro de Usuários
-![Tela de Cadastro de Usuários](./docs/users.png)
+### Tela de Gerenciamento de Usuários
+![Tela de Gerenciamento de Usuários](./docs/users.png)
 
-### Tela de Lista de Categorias
-![Tela de Lista de Categoria](./docs/categorias.png)
+### Tela de Gerenciamento de Categorias
+![Tela de Gerenciamento de Categoria](./docs/categorias.png)
 
-### Tela de Lista de Produtos
-![Tela de Lista de Produtos](./docs/produtos.png)
+### Tela de Gerenciamento de Produtos
+![Tela de Gerenciamento de Produtos](./docs/produtos.png)
 
 
 ---
