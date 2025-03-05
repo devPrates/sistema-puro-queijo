@@ -18,10 +18,10 @@ export default function Contact() {
   };
 
   return (
-    <section className="text-gray-600 body-font relative px-6 sm:px-0">
-      <div className="flex flex-col text-center w-full mb-20">
+    <section className="text-gray-600 body-font relative px-6 sm:px-0" id='contato'>
+      <div className="flex flex-col text-center w-full mb-10">
         <h2 className="text-xs text-[#732c02] tracking-widest font-medium title-font mb-1 uppercase">Ficou interessado em nossos produtos?</h2>
-        <h1 className="sm:text-4xl text-2xl font-bold title-font text-gray-900">Entre em Contato com Nossa Equipe</h1>
+        <h1 className="text-4xl text-center font-bold leading-none tracking-tighter text-gray-600 md:text-7xl lg:text-5xl">Entre em Contato com Nossa Equipe</h1>
       </div>
       <div className="container px-5 pb-24 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">

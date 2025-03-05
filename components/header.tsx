@@ -10,8 +10,8 @@ export default function Header() {
                     Descubra as possibilidades infinitas da nossa plataforma inovadora.
                 </p>
                 <div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
-                    <Button size={'lg'}>Ver Produtos</Button>
-                    <Button variant={'outline'} size={'lg'}>Sobre Nós</Button>
+                    <Button size={'lg'} className="bg-[#732c02] hover:bg-[#732c02]/80 shadow-lg">Ver Produtos</Button>
+                    <Button variant={'outline'} size={'lg'} className="shadow-lg">Sobre Nós</Button>
                 </div>
             </div>
             <div className="mt-12 aspect-video overflow-clip md:aspect-auto md:h-[420px]">

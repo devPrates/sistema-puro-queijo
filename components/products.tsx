@@ -16,11 +16,11 @@ export default function Products() {
   const [selectedTab, setSelectedTab] = useState(mockCategories[0]);
 
   return (
-    <section className="text-gray-600 body-font overflow-hidden mt-16">
+    <section className="text-gray-600 body-font overflow-hidden mt-16" id='produtos'>
 
       <div className="flex flex-col text-center w-full mb-20">
         <h2 className="text-xs text-[#732c02] tracking-widest font-medium title-font mb-1 uppercase">Venha conhecer nossos produtos</h2>
-        <h1 className="sm:text-4xl text-2xl font-bold title-font text-gray-900">Aqui você encontra os melhores produtos</h1>
+        <h1 className="text-4xl text-center font-bold leading-none tracking-tighter text-gray-600 md:text-7xl lg:text-5xl">Aqui você encontra os melhores produtos</h1>
       </div>
 
       <div className="container px-5 mt-10 mx-auto">

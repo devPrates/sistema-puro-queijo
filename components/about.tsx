@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 export default function About() {
     return (
-        <section className="container mx-auto relative py-24">
+        <section className="container mx-auto relative py-24" id="sobre">
             <div className="px-6 sm:px-0">
                 <div className="mx-auto flex max-w-7xl flex-wrap-reverse items-center">
                     <div className="w-full rounded-xl lg:w-1/2 lg:max-w-lg">
@@ -25,10 +25,10 @@ export default function About() {
                         <span className="mb-2 text-xs font-bold uppercase tracking-widest text-[#732c02]">
                             Conheça a Puro Queijo
                         </span>
-                        <h1 className="mb-4 text-4xl font-bold leading-none tracking-tighter text-gray-600 md:text-7xl lg:text-5xl">
+                        <h1 className="mb-4 text-4xl text-center sm:text-start font-bold leading-none tracking-tighter text-gray-600 md:text-7xl lg:text-5xl">
                             Empresa Pioneira no Mercado
                         </h1>
-                        <p className="mb-4 text-left text-base leading-relaxed text-gray-500">
+                        <p className="mb-4 text-left text-base leading-relaxed">
                             Nossa empresa é dedicada a fornecer soluções inovadoras que transformam a maneira como as pessoas trabalham e vivem. Com anos de experiência e uma equipe apaixonada, estamos comprometidos em fazer a diferença em cada projeto que realizamos.
                         </p>
                         <div className="mt-0 max-w-7xl flex-col sm:flex lg:mt-6">
